@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HTML Table</title>
-    </head>
-    <body>
-        <table border="black">
-            <caption>Student Information</caption>
-            <!-- Student Information -->
-            <!-- Table Header -->
-            <tr>
-                <th rowspan="6">Info</th>
-                <th rowspan="2">Name</th>
-                <th colspan="2">Address</th>
-            </tr>
-            <tr>
-                <th>City</th>
-                <th>House</th>
-            </tr>
-            <!-- Table Body -->
-            <tr>
-                <td>A</td>
-                <td>Delhi</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>B</td>
-                <td>Mumbai</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>C</td>
-                <td>Kolkata</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>D</td>
-                <td>Pune</td>
-                <td>4</td>
-            </tr>
-            </tbody>
-        </table>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <form action="/action">
+        <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        </div>
+        <br>
+        <div>
+        <lebel for="sex">Sex:</lebel>
+        <input type="radio" name="sex" id="male" value="male">
+        <lebel for="male">Male</lebel>
+        <input type="radio" name="sex" id="female" value="female">
+        <label for="female">Female</label>
+        </div>
+        <br>
+        <div>
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+            <option>Select an option</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="nepal">Nepal</option>
+            <option value="canada">Canada</option>
+        </select>
+        </div>
+        <br>
+        <div>
+        <label for="message">Message:</label> <br>
+        <textarea id="message" name="message" clos="30" rows="4"></textarea>
+        </div>
+        <br>
+        <div>
+        <input type="checkbox" name="newsletter" id="newsletter">
+        <label for="newsletter">Subscribe?</label>
+        </div>
+        <br>
+        <button>Submit</button>
+    </form>
+</body>
 </html>
