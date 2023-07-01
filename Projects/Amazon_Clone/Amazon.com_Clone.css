@@ -144,3 +144,27 @@ img{
 #nav-hw{
     height: -10px;
 }
+
+/* panel */
+
+.panel{
+    height: 40px;
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-ops p{
+    display: inline;
+}
+
+.panel-ops{
+    width: 70%;
+    font-size: 0.85rem;
+}
+
+.panel-deals{
+    font-size: 0.9rem;
+}
