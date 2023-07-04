@@ -1,0 +1,26 @@
+h1 {
+    color: red;
+}
+
+h2 {
+    color: green;
+}
+
+form label {
+    color: rgb(255, 0, 38);
+}
+
+p {
+    color: yellowgreen;
+}
+
+form input {
+    color: violet;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+button {
+    background-color: brown;
+    color: white;
+}

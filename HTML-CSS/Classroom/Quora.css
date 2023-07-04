@@ -1,0 +1,15 @@
+h1{
+    color: rgb(176, 16, 16);
+}
+
+h1 button{
+    background-color:rgb(161, 14, 14);
+    color: bisque;
+    /* border: none; */
+}
+
+.nav-menu li a{
+    color: red;
+    text-decoration: none;
+}
+

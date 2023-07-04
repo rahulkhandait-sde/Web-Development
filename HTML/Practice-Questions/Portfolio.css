@@ -1,0 +1,72 @@
+body{
+    /* background-color: antiquewhite; */
+    background-image: url(BG.jpg);
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    font-family: calisto mt !important;
+    text-shadow: 0px 0px 11px #f00c0cdb;
+    color : #a50202;
+    letter-spacing: 1px;
+}
+*{
+    text-align: center;
+    list-style: inside;
+}
+*::selection{
+    background-color: rgb(238, 216, 106);
+}
+h3{
+    color: #912d06f1;
+    font-family: Tahoma !important;
+    text-decoration: dashed underline;
+}
+
+p{
+    font-family: papyrus;
+    font-weight: bolder;
+}
+
+.footer>b{
+    text-align: center;
+    font-family: arial !important;
+    color: #2B2A4C !important;
+    text-shadow: none !important;
+}
+a{
+    text-decoration: none;
+    color: rgb(156, 6, 6);
+    font-style: italic;
+    text-shadow: 1px 1px 10px #ff0505fa;
+    font-family: papyrus !important;
+}
+a:hover{
+    color: rgb(21, 17, 241);
+    text-shadow: 1px 1px 10px #1205fffa;
+}
+b{
+    color: #a50202;
+    font-family: cambria !important;
+}
+img{
+    border-style:outset;
+    border-color: #a50202;
+}
+.maintext{
+    font-family: papyrus;
+    font-weight: bolder;
+}
+.maintext>li:hover{
+    color: rgb(21, 17, 241);
+}
+.contacts{
+    font-family: perpetua;
+    font-weight:bolder;
+}
+.contacts>li:hover{
+    color: rgb(21, 17, 241);
+}
+#smalltext{
+    text-emphasis-position: l̥;
+}
