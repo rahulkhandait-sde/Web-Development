@@ -1,11 +1,10 @@
-*{
+* {
     margin: 0px;
     font-family: Arial;
     border: border-box;
-
 }
 
-.navbar{
+.navbar {
     height: 60px;
     background-color: #0f1111;
     color: white;
@@ -16,61 +15,61 @@
 
 /* box1 */
 
-.nav-logo{
+.nav-logo {
     height: 60px;
     width: 100px;
 }
 
-.logo{
+.logo {
     background-image: url(amazon_logo.png);
     background-size: cover;
     height: 100%;
     width: 120%;
 }
 
-.border{
+.border {
     border: 1px solid transparent;
 }
 
-.border:hover{
+.border:hover {
     border: 1px solid;
 }
 
 /* box2 */
 
-.add-1st{
+.add-1st {
     color: #CCCCCC;
     font-size: 0.7rem;
     margin-left: 15px;
 }
 
-.add-2nd{
+.add-2nd {
     font-size: .8rem;
     font-weight: 700;
     margin-left: 3px;
 }
 
-.add-icon{
+.add-icon {
     display: flex;
     align-items: center;
 }
 
 /* box3 */
 
-.nav-search{
+.nav-search {
     display: flex;
     justify-content: space-evenly;
     height: 40px;
     width: 58%;
 }
 
-.nav-search:hover{
+.nav-search:hover {
     border: 2px solid orange;
     border-radius: 6.2px;
 
 }
 
-.search-select{
+.search-select {
     background-color: #f3f3f3;
     width: 50px;
     text-align: center;
@@ -79,7 +78,7 @@
     border: none;
 }
 
-.search-input{
+.search-input {
     width: 100%;
     font-size: 1rem;
     border: none;
@@ -89,7 +88,7 @@
     border: none;
 } */
 
-.search-icon{
+.search-icon {
     width: 50px;
     display: flex;
     justify-content: center;
@@ -98,16 +97,16 @@
     background-color: #febd69;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
-    color:#0f1111;
+    color: #0f1111;
 }
 
 /* box4 */
 
-img{
+img {
     height: 30px;
 }
 
-.flag-icon{
+.flag-icon {
     display: flex;
     align-items: center;
 
@@ -115,16 +114,16 @@ img{
 
 /* box5 & box6 */
 
-.line1{
+.line1 {
     font-size: 0.7rem;
 }
 
-.line2{
+.line2 {
     font-size: 0.8rem;
     font-weight: 700;
 }
 
-.account-lists{
+.account-lists {
     border: none;
     background-color: #0f1111;
     color: grey;
@@ -132,39 +131,122 @@ img{
 
 /* box7 */
 
-.nav-cart i{
+.nav-cart i {
     font-size: 30px;
 }
 
-.nav-cart{
+.nav-cart {
     font-size: 0.85rem;
     font-weight: 700;
 }
 
-#nav-hw{
+#nav-hw {
     height: -10px;
 }
 
 /* panel */
 
-.panel{
+.panel {
     height: 40px;
     background-color: #232f3e;
     color: white;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    padding-left: 14px;
+    font-size: 14px;
 }
 
-.panel-ops p{
+.panel-all{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.panel-ops p {
     display: inline;
+    margin-left: 15px;
+    position: relative;
+    font-size: 14px;
+    padding-bottom: 4px;
 }
 
-.panel-ops{
-    width: 70%;
+.panel-ops {
+    width: 84%;
     font-size: 0.85rem;
 }
 
-.panel-deals{
+.panel-deals {
     font-size: 0.9rem;
+    font-weight: 700;
+    position: relative;
 }
+
+/* main-section */
+
+main{
+    background-color: #e3e6e6;
+}
+
+/* hero-section */
+
+.hero-section {
+    background-image: url(hero_image.jpg);
+    background-size: cover;
+    height: 600px;
+    width: 1504px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 8px;
+    z-index: 0;
+}
+
+.hero-msg{
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 97%;
+    position: relative;
+    top: 245px;
+}
+
+.hero-msg a {
+    color: #007185;
+    text-decoration: none;
+}
+
+.hero-msg a:hover {
+    text-decoration: underline;
+}
+
+/* shop-section */
+
+.shop-section{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box{
+    border: 2px solid black;
+    height: 385px;
+    width: 22.5%;
+    padding: 20px 0px 15px;
+    position: relative;
+    bottom: 298px;
+    background-color: white;
+    padding: 20px 0px 15px;
+}
+
+.box-image{
+    width: 292px;
+    height: 303px;
+    padding: 0px 20px;
+    margin: 44px;
+    display: inline-grid;
+}
+
+
