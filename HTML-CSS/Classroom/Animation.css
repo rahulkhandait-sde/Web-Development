@@ -1,0 +1,15 @@
+.box{
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+
+    animation-name: fontAnimation;
+}
+
+@keyframes fontAnimation{
+    from {
+        font-size: 20px;
+    }
+    to {
+        font-size: 40px;}
+}
