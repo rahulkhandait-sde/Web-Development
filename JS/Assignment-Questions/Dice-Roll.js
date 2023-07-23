@@ -1,2 +1,2 @@
 const dice = Math.ceil(Math.random() *6 );
-console.log(`Random number is ${dice}`);
+console.log(`Value of the dice is ${dice}`);
