@@ -84,8 +84,8 @@
     border: none;
 }
 
-/* .search-input::selection{
-    border: none;
+/* .search-input:focus{
+    border: transparent;
 } */
 
 .search-icon {
@@ -190,7 +190,6 @@ main{
 /* hero-section */
 
 .hero-section {
-    background-image: url(./Assests/hero_image.jpg);
     background-size: cover;
     height: 600px;
     width: 1504px;
@@ -211,7 +210,7 @@ main{
     font-size: 0.85rem;
     width: 97%;
     position: relative;
-    top: 245px;
+    top: -344px;
 }
 
 .hero-msg a {
@@ -221,6 +220,63 @@ main{
 
 .hero-msg a:hover {
     text-decoration: underline;
+}
+
+/* Image Slider */
+.image-container{
+    position: relative;
+}
+
+.image-list{
+    display: flex;
+}
+
+.image-item{
+    min-width: 100%;            
+    transition: transform 0.2s ease-out;
+}
+
+.image-item img{
+    background-size: cover;
+    height: 600px;
+    width: 1504px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 8px;
+    z-index: 0;
+}
+
+.image-btn-container{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.slider-btn{
+    padding: 95px 20px;
+    font-size: 50px;
+    font-weight: 300;
+    background-color: transparent;
+    border: 2px solid transparent;
+}
+
+.slider-btn:focus{
+    border: 3px solid #008296;
+    box-shadow: -1px -1px 2px white, 1px 1px 1px white;
+    margin: 2px;
+}
+
+#slide-btn-left{
+    position: relative;
+    left: 7.5px;
+}
+
+#slide-btn-right{
+    position: relative;
+    right: 7.5px;
 }
 
 /* shop-section */
@@ -236,7 +292,7 @@ main{
     width: 22.5%;
     padding: 20px 0px 15px;
     position: relative;
-    bottom: 298px;
+    top: -885px;
     background-color: white;
     padding: 20px 0px 15px;
 }
