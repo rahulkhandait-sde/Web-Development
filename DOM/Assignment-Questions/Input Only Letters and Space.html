@@ -10,7 +10,7 @@
     <body>
         <h2>Your name will appear here!👈</h2>
         <input type="text" placeholder="enter your name"
-            onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.charCode==32">
+            onkeydown="return /[a-zA-Z ]/i.test(event.key)">
         <script src="Input Only Letters and Space.js"></script>
     </body>
 
