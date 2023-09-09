@@ -3,7 +3,10 @@ const mysql = require('mysql2');
 const express = require('express');
 const app = express();
 const path = require("path");
+const methodOverride = require('method-override');
 
+app.use(methodOverride('_method'));
+app.use(express.urlencoded({extended: true})); // to parse the form data
 app.set('view engine', 'ejs');
 app.set("views",path.join(__dirname,"/views"))
 
@@ -74,13 +77,39 @@ app.get('/user/:id/edit', (req, res) => {
 		connection.query(query, (err, result) => {
 			if (err) throw err;
 			let user = result[0]; // user is an object
-			res.render('edituser.ejs', { user}); // user is passed to edituser.ejs
+			res.render('edituser.ejs', {user}); // user is passed to edituser.ejs
 		});
 	} catch (error) {
 		console.log(error);
 		res.send('Some error in DB');
 	}
 });
+
+// Update Route
+app.patch("/user/:id", (req, res) => {
+	let { id } = req.params;
+	let {password: formPass, username: newUsername} = req.body;
+	let query = `SELECT * FROM user WHERE id = '${id}'`;
+	try {
+		connection.query(query, (err, result) => {
+			if (err) throw err;
+			let user = result[0]; // user is an object
+			if (formPass !== user.password) {
+				res.send('Password did not match');
+			} else {
+				let query = `UPDATE user SET username = '${newUsername}' WHERE id = '${id}'`;
+				connection.query(query, (err, result) => {
+					if (err) throw err;
+					res.redirect('/user');
+				});
+			}
+		});
+	} catch (error) {
+		console.log(error);
+		res.send('Some error in DB');
+	}
+});
+
 
 
 app.listen('8080', () => {
