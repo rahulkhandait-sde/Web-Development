@@ -19,3 +19,18 @@ VALUES
 
 SELECT * FROM teacher;
 
+SELECT *
+FROM teacher
+WHERE salary > 55000;
+
+ALTER TABLE teacher
+CHANGE COLUMN salary ctc int;
+
+UPDATE teacher
+SET ctc = ctc + ctc * 0.25;
+
+ALTER TABLE teacher
+ADD COLUMN city varchar(15) default "Gurgaon";
+
+ALTER TABLE teacher
+DROP column ctc;
