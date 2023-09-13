@@ -61,7 +61,7 @@ app.get('/user', (req, res) => {
 	try {
 		connection.query(query, (err, users) => {
 			if (err) throw err;
-			res.render('showuser.ejs', {users});
+			res.render('show-user.ejs', {users});
 		});
 	} catch (error) {
 		console.log(error);	
@@ -77,7 +77,7 @@ app.get('/user/:id/edit', (req, res) => {
 		connection.query(query, (err, result) => {
 			if (err) throw err;
 			let user = result[0]; // user is an object
-			res.render('edituser.ejs', {user}); // user is passed to edituser.ejs
+			res.render('edit.ejs', {user}); // user is passed to edit.ejs
 		});
 	} catch (error) {
 		console.log(error);
@@ -110,7 +110,9 @@ app.patch("/user/:id", (req, res) => {
 	}
 });
 
-
+app.delete("/user/:id", (req, res) => {
+	let { id } = req.params;
+	
 
 app.listen('8080', () => {
 	console.log('Server is running on port 8080');
